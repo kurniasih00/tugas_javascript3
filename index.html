@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Eksternal</title>
+</head>
+
+<style>
+
+.table_a{
+    background-color: white;
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+    overflow: hidden;
+    border-collapse: collapse;
+    border-radius: 5px;
+    color: black;
+}
+
+form th{
+    background-color: slateblue;
+    color: beige;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+form td{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#hasil{
+padding-top: 50px;
+width: 30%;
+}
+
+.justify-content-center {
+        display: flex;
+        justify-content: center;
+}
+
+input{
+    width: 90%;
+}
+</style>
+
+<body>
+<form id="frm">
+<table class="table_a">
+<tr>
+    <th colspan="2"><h1>Form Input</h1></th>
+</tr>
+
+<tr>
+    <td><label for="">Nama</label></td>
+    <td><input type="text" name="nama" id="" placeholder="Masukan nama anda"></td>
+</tr>
+
+<tr>
+    <td><label for="">Pekerjaan</label></td>
+    <td><input type="text" name="pekerjaan" id="" placeholder="Masukan Pekerjaan"></td>
+</tr>
+
+<tr>
+    <td><label for="">Hobi</label></td>
+    <td><input type="text" name="hobi" id="" placeholder="Masukan Hobi"></td>
+</tr>
+
+<tr>
+<th colspan="2">
+    <button type="button" onclick="dataPersonal()">Submit</button>
+</th>
+</tr>
+
+</table>
+</form>
+<div class='justify-content-center'>
+<center id="hasil"></center>
+</div>
+<script src="js/skrip.js"></script>
+</body>
+</html>
